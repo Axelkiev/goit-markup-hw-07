@@ -1,56 +1,219 @@
-:root {
-  --main-title-color: #2e2f42;
-  --primary-brand-color: #404bbf;
-  --pressed-state-color: #4d5ae5;
-  --text-color: #434455;
-  --white-color: #ffffff;
-  --cloud-light-color: #f4f4fd;
-  --border-bottom: #e7e9fc;
-  --background-modal: #fcfcfc;
-  --modal-grey: rgba(46, 47, 66, 0.4);
-  --input-text: #8e8f99;
-}
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-p {
-  margin: 0;
+@media (min-width: 428px) {
+  .header-container {
+    width: 428px;
+  }
+  .hero-title {
+    width: 428px;
+  }
+  .advantages {
+    width: 428px;
+  }
+  .section-customers {
+    width: 428px;
+  }
+  .fotter-form {
+    width: 428px;
+  }
 }
 
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-a {
-  text-decoration: none;
-}
-button {
-  cursor: pointer;
-  border: none;
-  border-radius: 4 px;
-}
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--text-color);
-  background-color: var(--white-color);
+@media (min-width: 768px) and (max-width: 1157px) {
+  .header-container {
+    width: 768px;
+  }
+  .header-address-list {
+    display: block;
+  }
+  .haeder-list-contacts {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    flex-direction: column;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 120px;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .hero-title {
+    width: 768px;
+    font-size: 56px;
+    line-height: 60px;
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+  .advantages {
+    width: 768px;
+  }
+  .advantages-title {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: start;
+  }
+  .advantages-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .list-our {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px 24px;
+  }
+  .list-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px 24px;
+    padding-left: 108px;
+    padding-right: 108px;
+    width: 768px;
+    margin: auto;
+  }
+  .team-background {
+    width: 264px;
+  }
+  .section-customers {
+    width: 768px;
+  }
+  .customers-list {
+    gap: 72px 24px;
+  }
+  .fotter-form {
+    flex-direction: row;
+    width: 454px;
+    gap: 24px;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .fotteer-tab-text {
+    display: flex;
+  }
+  .subscribe-wrap {
+    display: flex;
+    align-items: start;
+  }
+  .footer-soc {
+    align-items: start;
+    margin-left: 24px;
+  }
+  .fotter-text {
+    width: 264px;
+  }
+  .footer-cont {
+    display: flex;
+    width: 768px;
+    align-items: start;
+    padding-left: 108px;
+    margin: auto;
+  }
+  .footer-context {
+    align-items: start;
+  }
 }
 
-.link {
-  text-decoration: none;
+@media (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .header-container {
+    width: 1158px;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 120px;
+  }
+  .haeder-list-contacts {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  .header-address-list {
+    margin-left: auto;
+    display: block;
+  }
+  .header-nav {
+    width: 782px;
+  }
+  .icon-center {
+    display: flex;
+  }
+  .list-our {
+    display: flex;
+    gap: 24px;
+  }
+  .advantages {
+    width: 1158px;
+  }
+  .advantages-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .advantages-text {
+    width: 267px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .we-doing {
+    display: flex;
+    padding-top: 0;
+  }
+  .list-doing {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .list-team {
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+  }
+  .section-customers {
+    width: 1158px;
+  }
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+  .footer-cont {
+    align-items: flex-start;
+    flex-direction: row;
+    width: 1158px;
+    height: 110px;
+  }
+  .fotteer-tab-text {
+    display: flex;
+  }
+  .footer-context {
+    width: 264px;
+    align-items: start;
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+  .footer-soc {
+    align-items: start;
+    margin-right: 80px;
+  }
+  .fotter-form {
+    flex-direction: row;
+    align-items: start;
+  }
+  .subscribe-btn {
+    margin: 0;
+  }
+  .subscribe-wrap {
+    align-items: start;
+  }
+  .footer-input {
+    width: 264px;
+  }
 }
-.list {
-  list-style: none;
-}
-/* -------------------- */

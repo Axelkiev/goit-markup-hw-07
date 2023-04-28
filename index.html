@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/adaptive.css"/>
   </head>
   <body>
     <header class="header">
@@ -28,7 +28,7 @@
           <a href="./index.html" class="link header-logo"
             >Web<span class="color-logo list">Studio</span></a
           >
-          <button class="nav-btn">
+          <button data-menu-open class="nav-btn">
           <svg class="nav-btn-svg" width="32" height="22">
                   <use href="./images/icons.svg#icon-hamburger"></use>
                 </svg>
@@ -64,12 +64,71 @@
             </li>
           </ul>
         </address>
-      </div>
-      
-    </header>
-    
-          
-        
+
+        <div data-menu class="mobile is-hidden">
+          <div class="mobile-conteiner">
+            <button data-menu-close type="button" class="mobile-btn">
+              <svg width="24" height="24">
+                <use class="modal-svg-close" href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="mobile-contacts">
+              <div>
+                <ul class="mobile-list list">
+                  <li class="mobile-item"><a class="link current-mobile" href="./index.html">Studio</a></li>
+                  <li class="mobile-item"><a class="link" href="./portfolio.html" target="_blank">Portfolio</a></li>
+                  <li class="mobile-item"><a class="link" href="">Contacts</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul class="mobile-adress list">
+                  <li class="mobile-adress-ithem">
+                    <a class="link mobile-link-tel" href="tel:+110001111111">
+                      +11 (000) 111-11-11</a>
+            
+                  </li>
+                  <li class="mobile-adress-ithem">
+                    <a class="link mobile-link-mail" href="mailto:info@devstudio.com">
+                      info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+                <ul class="soc-list-mobile list">
+                  <li class="soc-item">
+                    <a class="soc-link link" href>
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-link link" href>
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-link link" href>
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-link link" href>
+                      <svg class="soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </header> 
     <main>
       <!-- hero -->
         <div class="container hero">
@@ -79,7 +138,7 @@
           </button>
         </div>
       </section>
-      <!-- section 1 -->
+      <!-- <!- section 1 -> -->
       <section class="advantages section">
         <div class="container">
           <h2 class="advantages-hidden visually-hidden">Our advantages</h2>
@@ -135,28 +194,33 @@
           </ul>
         </div>
       </section>
-      <!-- section 2 -->
+      <!-- <!- section 2 -> -->
       <section class="we-doing section doing-style">
         <div class="container">
           <h2 class="we-doing-title">What are we doing</h2>
           <ul class="list list-doing">
             <li>
               <img
+                srcset="./images/computer.jpg x1,
+                ./images/retina/desktop.jpg x2"
                 src="./images/computer.jpg"
                 alt="computer-display"
                 width="360"
-              />
-            </li>
+              /></li>
             <li>
               <img
-                src="./images/screenshots.jpg"
+                srcset="./images/screenshots.jpg x1,
+                ./images/retina/mob-disp.jpg x2"
+                src="./images/screenshots.jpg" 
                 alt="screenshots"
                 width="360"
               />
             </li>
             <li>
               <img
-                src="./images/computer-and-phone.jpg"
+                srcset="./images/computer-and-phone.jpg x1,
+                ./images/retina/mob-disp.jpg x2"
+                src="./images/computer-and-phone.jpg" 
                 alt="computer-and-phone"
                 width="360"
               />
@@ -171,6 +235,8 @@
           <ul class="list list-team">
             <li class="team-background">
               <img
+              srcset="./images/mark-guerrero.jpg x1,
+                ./images/retina/mark.jpg x2"
                 src="./images/mark-guerrero.jpg"
                 alt="photo-mark-guerrero"
                 width="264"
@@ -212,6 +278,8 @@
             </li>
             <li class="team-background">
               <img
+              srcset="./images/tom-ford.jpg x1,
+                ./images/retina/tom.jpg x2"
                 src="./images/tom-ford.jpg"
                 alt="photo-tom-ford"
                 width="264"
@@ -253,6 +321,8 @@
             </li>
             <li class="link team-background">
               <img
+              srcset="./images/camila-garcia.jpg x1,
+                ./images/retina/camila.jpg x2"
                 src="./images/camila-garcia.jpg"
                 alt="photo camila-garcia"
                 width="264"
@@ -294,6 +364,8 @@
             </li>
             <li class="team-background">
               <img
+              srcset="./images/daniel-wilson.jpg x1,
+                ./images/retina/daniel.jpg x2"
                 src="./images/daniel-wilson.jpg"
                 alt="photo-daniel-wilson"
                 width="264"
@@ -336,7 +408,7 @@
           </ul>
         </div>
       </section> 
-      <!-- <section class="section section-customers">
+      <section class="section section-customers">
         <div class="container">
           <h2 class="customers-heder">Customers</h2>
           <ul class="customers-list list">
@@ -384,11 +456,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-cont">
-        <div>
+        <div class="fotteer-tab-text">
+         <div class="footer-context">
           <a href="./index.html" class="footer-logo link"
             >Web<span class="footer-color-logo list">Studio</span></a
           >
@@ -396,43 +469,44 @@
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
-        </div>
-        <div class="footer-soc">
-          <p class="fotter-social">Social media</p>
-          <ul class="footer-soc-list list">
-            <li class="soc-item">
+         </div>
+          <div class="footer-soc">
+             <p class="fotter-social">Social media</p>
+              <ul class="footer-soc-list list">
+             <li class="soc-item">
               <a class="footer-soc-link link" href>
                 <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
-            </li>
-            <li class="soc-item">
+             </li>
+             <li class="soc-item">
               <a class="footer-soc-link link" href>
                 <svg class="footer-soc-icon" width="24" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
-            </li>
-            <li class="soc-item">
+             </li>
+             <li class="soc-item">
               <a class="footer-soc-link link" href>
                 <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </li>
-            <li class="soc-item">
+             </li>
+             <li class="soc-item">
               <a class="footer-soc-link link" href>
                 <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
-            </li>
-          </ul>
-        </div>
-        <div class="subscribe-wrap">
-           <p class="fotter-social">Subscribe</p>
-            <form class="fotter-form">
+             </li>
+             </ul>
+          </div>
+             </div>
+              <div class="subscribe-wrap">
+              <p class="fotter-social">Subscribe</p>
+               <form class="fotter-form">
               <input
                 type="text"
                 name="user-emeil"
@@ -447,7 +521,7 @@
             </button>
             </form>
           </div>
-    </footer> -->
+    </footer>
     <div class="backdrob is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">
@@ -532,6 +606,9 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal-js"></script>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
