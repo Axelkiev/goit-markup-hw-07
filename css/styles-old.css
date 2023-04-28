@@ -55,14 +55,14 @@ body {
 }
 
 .container {
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 .section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .visually-hidden {
   position: absolute;
@@ -78,30 +78,23 @@ body {
   overflow: hidden;
 }
 .header {
-  height: 70px;
+  height: 72px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--border-bottom);
 }
 .header-container {
-  width: 100%;
   display: flex;
 }
 .header-nav {
-  width: 100%;
   display: flex;
   align-items: center;
-  /* margin-right: auto; */
-}
-.nav-btn {
-  background-color: transparent;
-  margin-left: auto;
-}
-.nav-btn-svg {
-  stroke: #2e2f42;
+  margin-right: auto;
 }
 .header-list {
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .haeder-list-contacts {
   display: flex;
@@ -120,7 +113,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--pressed-state-color);
-  /* margin-right: 76px; */
+  margin-right: 76px;
 }
 
 .header-link {
@@ -154,7 +147,7 @@ body {
   font-style: normal;
 }
 .header-address-list {
-  display: none;
+  font-style: normal;
 }
 .header-contacts {
   font-weight: 400;
@@ -181,22 +174,22 @@ body {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  padding-top: 112px;
-  padding-bottom: 112px;
-  width: 100%;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  max-width: 1440px;
+  height: 600px;
   margin: 0 auto;
 }
 
 .hero-title {
-  width: 100%;
+  width: 496px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 56px;
+  line-height: 60px;
   margin: auto;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
   letter-spacing: 0.02em;
   color: var(--white-color);
 }
@@ -383,27 +376,28 @@ body {
 }
 
 .icon-center {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .list-our {
+  display: flex;
+  gap: 24px;
 }
 
 .advantages-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--main-title-color);
 }
 .advantages-text {
-  font-weight: 500;
+  width: 264px;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
   color: var(--text-color);
 }
 /*--------------section2------*/
@@ -411,7 +405,8 @@ body {
   padding-top: 0;
 }
 .list-doing {
-  display: none;
+  display: flex;
+  gap: 24px;
 }
 .we-doing-title {
   margin-bottom: 72px;
