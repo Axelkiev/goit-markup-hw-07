@@ -66,21 +66,16 @@
         </address>
 
         <div  class="mobile js-menu-container">
-          <div class="mobile-conteiner">
-            <button  type="button" class="mobile-btn js-close-menu">
+          <button  type="button" class="mobile-btn js-close-menu">
               <svg width="24" height="24">
                 <use class="modal-svg-close" href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <div class="mobile-contacts">
-              <div>
-                <ul class="mobile-list list">
-                  <li class="mobile-item"><a class="link current-mobile" href="./index.html">Studio</a></li>
-                  <li class="mobile-item"><a class="link" href="./portfolio.html" target="_blank">Portfolio</a></li>
-                  <li class="mobile-item"><a class="link" href="">Contacts</a></li>
+            <ul class="mobile-list list">
+                  <li class="mobile-item"><a class="link link-mob" href="./index.html">Studio</a></li>
+                  <li class="mobile-item"><a class="link link-mob" href="./portfolio.html" target="_blank">Portfolio</a></li>
+                  <li class="mobile-item"><a class="link link-mob" href="">Contacts</a></li>
                 </ul>
-              </div>
-              <div>
                 <ul class="mobile-adress list">
                   <li class="mobile-adress-ithem">
                     <a class="link mobile-link-tel" href="tel:+110001111111">
@@ -96,37 +91,34 @@
                 <ul class="soc-list-mobile list">
                   <li class="soc-item">
                     <a class="soc-link link" href>
-                      <svg class="soc-icon" width="16" height="16">
+                      <svg class="soc-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
                     <a class="soc-link link" href>
-                      <svg class="soc-icon" width="16" height="16">
+                      <svg class="soc-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
                     <a class="soc-link link" href>
-                      <svg class="soc-icon" width="16" height="16">
+                      <svg class="soc-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
                     <a class="soc-link link" href>
-                      <svg class="soc-icon" width="16" height="16">
+                      <svg class="soc-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
       </div>  
     </header> 
     <main>
@@ -143,7 +135,7 @@
         <div class="container">
           <h2 class="advantages-hidden visually-hidden">Our advantages</h2>
           <ul class="list list-our">
-            <li>
+            <li class="advantages-list">
               <div class="advantages-icons icon-center">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -155,7 +147,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="advantages-list">
               <div class="advantages-icons icon-center">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -167,7 +159,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="advantages-list">
               <div class="advantages-icons icon-center">
                 <svg width="64" height="50">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -599,7 +591,7 @@
               value="accept"
             />
             <label for="accept" class="input-text-accept" id="accept"
-              >I accept the terms and conditions of the <a class="link modal-link" href="">Privacy Policy</a></label
+              ><span class="text-accept">I accept the terms and conditions of the</span> <a class="link modal-link" href="">Privacy Policy</a></label
             >
           </div>
           <button class="modal-btn" type="submit">Send</button>
