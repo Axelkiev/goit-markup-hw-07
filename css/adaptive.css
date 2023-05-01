@@ -1,4 +1,4 @@
-@media (min-width: 428px) {
+@media (min-width: 428px) and (max-width: 767px) {
   .header-container {
     width: 428px;
   }
@@ -64,6 +64,8 @@
     display: none;
   }
   .hero {
+    max-width: 768px;
+    height: 436px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -82,17 +84,17 @@
     }
   }
   .hero-title {
-    width: 768px;
+    max-width: 496px;
     font-size: 56px;
     line-height: 60px;
-    padding-left: 136px;
-    padding-right: 136px;
+    margin-bottom: 36px;
   }
   .advantages {
     width: 768px;
   }
   .advantages-list {
     margin-bottom: 0px;
+    width: 356px;
   }
   .advantages-title {
     font-size: 36px;
@@ -104,18 +106,16 @@
     line-height: 24px;
   }
   .list-our {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 72px 24px;
   }
   .list-team {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 64px 24px;
-    padding-left: 108px;
-    padding-right: 108px;
-    width: 768px;
-    margin: auto;
+    flex-direction: row;
   }
   .team-background {
     width: 264px;
@@ -138,8 +138,8 @@
     display: flex;
   }
   .subscribe-wrap {
-    display: flex;
-    align-items: start;
+    width: 455px;
+    display: block;
   }
   .footer-soc {
     align-items: start;
@@ -164,10 +164,15 @@
   .input-text-accept {
     align-items: flex-end;
   }
+  .container {
+    width: 768px;
+  }
 }
 
 @media (min-width: 1158px) {
   .hero {
+    max-width: 100%;
+    height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: linear-gradient(
@@ -239,7 +244,7 @@
     line-height: 24px;
   }
   .advantages-text {
-    width: 267px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }

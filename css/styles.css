@@ -186,7 +186,8 @@ body {
   background-size: cover;
   padding-top: 112px;
   padding-bottom: 112px;
-  width: 100%;
+  max-width: 428px;
+  height: 432px;
   margin: 0 auto;
 }
 
@@ -630,10 +631,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* mar
-
-Андрей Савченко, [28.04.2023 20:00]
-gin-left: 80px; */
   width: 100%;
 }
 .fotter-form {
@@ -644,7 +641,6 @@ gin-left: 80px; */
 }
 .footer-input {
   outline: none;
-  /* width: 264px; */
   height: 40px;
   color: var(--white-color);
   font-size: 12px;
